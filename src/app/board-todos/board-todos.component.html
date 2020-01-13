@@ -1,0 +1,18 @@
+<div class="row">
+  <div class="col-6">
+    <div>Todo</div>
+    <div class="card" *ngIf="todoList && todoList.length !== 0">
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item" *ngFor="let todo of todoList;">{{todo.title}}</li>
+      </ul>
+    </div>
+  </div>
+  <div class="col-6">
+    <div>Done</div>
+    <div class="card" *ngIf="doneList && doneList.length !== 0">
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item" *ngFor="let done of doneList;">{{done.title}}</li>
+      </ul>
+    </div>
+  </div>
+</div>
