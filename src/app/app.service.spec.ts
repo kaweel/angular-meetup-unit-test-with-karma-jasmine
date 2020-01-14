@@ -85,7 +85,7 @@ describe('AppService', () => {
       expect(actual.length).toEqual(1);
     });
 
-    it('status is true should return list with only status false', () => {
+    it('status is false should return list with only status false', () => {
       const taskList: Task[] = [
         {
           userId: 1,
