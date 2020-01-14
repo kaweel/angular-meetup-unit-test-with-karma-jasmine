@@ -54,7 +54,7 @@ describe('AppComponent', () => {
   });
 
   describe('onSubmit', () => {
-    it('not found should alert msg', fakeAsync(() => {
+    it('have some exception should alert msg', fakeAsync(() => {
 
       const fixture = TestBed.createComponent(AppComponent);
       fixture.detectChanges();
