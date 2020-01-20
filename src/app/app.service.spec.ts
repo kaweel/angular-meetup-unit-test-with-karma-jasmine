@@ -28,7 +28,7 @@ describe('AppService', () => {
 
   describe('filterTaskByStatus', () => {
 
-    it('list is empty should return empty list', () => {
+    it('task list is empty should return empty list', () => {
       const actual = service.filterTaskByStatus([], null);
       expect(actual.length).toEqual(0);
     });
