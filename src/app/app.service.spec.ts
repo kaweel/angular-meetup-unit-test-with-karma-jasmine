@@ -28,12 +28,12 @@ describe('AppService', () => {
 
   describe('filterTaskByStatus', () => {
 
-    it('taskList is empty should return empty taskList', () => {
+    it('list is empty should return empty list', () => {
       const actual = service.filterTaskByStatus([], null);
       expect(actual.length).toEqual(0);
     });
 
-    it('status is null should return empty', () => {
+    it('completed is null should return empty list', () => {
       const taskList: Task[] = [
         {
           userId: 1,
@@ -59,7 +59,7 @@ describe('AppService', () => {
       expect(actual.length).toEqual(0);
     });
 
-    it('status is true should return list with only status true', () => {
+    it('completed is true should return done list', () => {
       const taskList: Task[] = [
         {
           userId: 1,
@@ -85,7 +85,7 @@ describe('AppService', () => {
       expect(actual.length).toEqual(1);
     });
 
-    it('status is false should return list with only status false', () => {
+    it('completed is false should return todo list', () => {
       const taskList: Task[] = [
         {
           userId: 1,

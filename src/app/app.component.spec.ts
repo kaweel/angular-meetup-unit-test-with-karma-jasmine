@@ -79,7 +79,7 @@ describe('AppComponent', () => {
       expect(app.doneList.length).toEqual(0);
     }));
 
-    it('not found user should not call getTasksByUserId', fakeAsync(() => {
+    it('not found user should display `User Not Found`', fakeAsync(() => {
 
       const fixture = TestBed.createComponent(AppComponent);
       fixture.detectChanges();
@@ -102,7 +102,7 @@ describe('AppComponent', () => {
       expect(app.doneList.length).toEqual(0);
     }));
 
-    it('found user should call getTasksByUserId', fakeAsync(() => {
+    it('found user should display name and list(todo,done)', fakeAsync(() => {
 
       const fixture = TestBed.createComponent(AppComponent);
       fixture.detectChanges();
